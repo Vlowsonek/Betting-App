@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Electron App</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="items" id="items">
+      <button class="btn" id="home" href="index.html">Home</button>
+      <button class="btn" id="about" href="about.html">About</button>
+      <button class="btn" id="contact" href="contact.html">Contact</button>
+      <button class="btn" id="login" href="login.html">Login</button>
+      <button class="btn" id="register" href="register.html">Register</button>
+    </div>
+
+  </nav>
+  <div class="main" id="main">
+    <h1 class="title" id="title">Win amazing prizes!</h1>
+    <p class="content" id="content">Just by betting!</p>
+    <button class="play-btn" id="play">Play</button>
+    <img src="./assets/OIP__1_-removebg-preview.png" alt="money" class="money1" id="money1">
+    <img src="./assets/OIP__1_-removebg-preview.png" alt="money" class="money2" id="money2">
+
+  </div>
+
+  <script src="renderer.js"></script>
+  <script>
+    var playBtn = document.getElementById("play");
+    var money1 = document.getElementById("money1");
+    var money2 = document.getElementById("money2");
+
+    playBtn.addEventListener('mouseover', function() {
+      money1.style.top = "378px";
+      money2.style.top = "378px";
+      money1.style.scale = "1";
+      money2.style.scale = "1";
+      money1.style.left = "650px";
+      money2.style.right = "650px";
+      money1.style.transition = "0.5s";
+      money2.style.transition = "0.5s";
+
+    });
+    playBtn.addEventListener('mouseout', function() {
+      money1.style.top = "380px"
+      money2.style.top = "380px";
+      money1.style.scale = "0.5";
+      money2.style.scale = "0.5";
+      money1.style.left = "670px";
+      money2.style.right = "670px";
+      money1.style.transition = "0.5s";
+      money2.style.transition = "0.5s";
+
+    });
+
+    playBtn.addEventListener('click', function() {
+      money1.style.scale = "0.9";
+      money2.style.scale = "0.9";
+      money1.style.transition = "0.5s";
+      money2.style.transition = "0.5s";
+    });
+  </script>
+  
+</body>
+</html>

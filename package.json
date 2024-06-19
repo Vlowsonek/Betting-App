@@ -1,0 +1,18 @@
+{
+  "name": "my-electron-app",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ./"
+  },
+  "author": "Miromir Ślesicki",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "sqlite3": "^5.1.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Vlowsonek/Betting-App"
+  }
+}
